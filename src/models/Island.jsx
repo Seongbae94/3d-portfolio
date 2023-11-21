@@ -81,7 +81,7 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
 
       islandRef.current.rotation.y += rotationSpeed.current;
     } else {
-      const rotation = islandRef.current.rotation;
+      const rotation = islandRef.current.rotation.y;
 
       const normalizedRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
